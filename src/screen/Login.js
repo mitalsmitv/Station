@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
         fontSize:15,
         fontFamily:"Poppins-Medium"
     },
-    text2:{
+    text2: {
         fontSize:12,
         color:"#000000",
         alignSelf:"center",
