@@ -39,9 +39,9 @@ alignSelf:"center"
             ><Text style={styles.touchtext}>
                 Login</Text>
                 <Image style={{
-                    marginLeft:15,
+                    marginLeft:7,
                     alignSelf:"center",
-                    marginTop:5
+                    // marginTop:5
                 }} source={require('../../src/Images/png/Errow.png')}/>
                 </TouchableOpacity>
                 <TouchableOpacity><Text style={styles.text2}>Forgot Password?</Text></TouchableOpacity>
@@ -55,10 +55,10 @@ export default Login
 const styles = StyleSheet.create({
     textLabel: {
         color: "#000000",
-        fontSize: 24,
-        marginTop:40,
+        fontSize: 22,
+        marginTop:35,
         alignSelf:"center",
-        fontWeight:"bold"
+        fontFamily:"Poppins-Bold"
     },
     textbox: {
         borderBottomWidth:2,
@@ -70,34 +70,34 @@ const styles = StyleSheet.create({
     textinput: {
         color: "#000000",
         fontSize: 16,
-        fontWeight:"bold",
         marginLeft:30,
-        width:"80%"
+        width:"80%",
+        fontFamily:"Poppins-Bold"
     },
     touch:{
         borderWidth:2,
         borderColor:"#DD1D21",
-        borderRadius:35,
+        borderRadius:60,
         alignSelf:"center",
         backgroundColor:"#DD1D21",
         flexDirection:"row",
-        padding:12,
-        marginTop:25,
+        padding:10,
+        marginTop:35,
         alignItems:"center",
-        width:"30%",
+        width:"29%",
         justifyContent:"center"
     },
     touchtext:{
         color:"#FFFFFF",
-        fontSize:16,
-        fontWeight:"bold"
+        fontSize:15,
+        fontFamily:"Poppins-Medium"
     },
     text2:{
-        fontSize:14,
+        fontSize:12,
         color:"#000000",
         alignSelf:"center",
         marginTop:20,
-        fontWeight:"bold"
+    fontFamily:"Poppins-Bold"
     },
     imagebg:{
 height:"75%",
