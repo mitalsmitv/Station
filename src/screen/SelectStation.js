@@ -3,6 +3,7 @@ import { View, Text, ImageBackground, Image, TouchableOpacity, StyleSheet, TextI
 
 function SelectStation(props) {
     const[data,setdata]=useState([])
+    const[Search,setSearch]=useState('')
     useEffect(()=>{
 getStations()
     },[])
@@ -32,11 +33,15 @@ getStations()
             </ImageBackground>
             <View style={styles.viewm}>
                 <View style={styles.views}><Image style={{ alignSelf: "center" }} source={require('../../src/Images/png/Search.png')} />
-                    <TextInput style={styles.textinput}>
-                        Search by ID, Name, City
-                    </TextInput></View>
+                    <TextInput style={styles.textinput}
+                    placeholder="Search by ID, Name, City"
+                    value={Search}
+                    onChangeText={(value)=>{setSearch(value)}}
+
+                    />
+                    </View>
                 <FlatList
-                    data={data}
+                    data={data.filter(e=>e?.pantone_value.includes(Search))}
                     renderItem={({ item, index }) => {
                         console.log(item)
                         return (
